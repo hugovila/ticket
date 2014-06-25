@@ -16,17 +16,17 @@ end
 post '/ticket/print' do
 
 	#erb :index, :layout => :ticket_print_black
-	renderir(params[:template])
+	renderize(params[:template])
 
 end
 
 get '/ticket/print/:name/:surname/:where/:when/:template' do
 	
-	renderir(params[:template])
+	renderize(params[:template])
 
 end
 
-def renderir(template)
+def renderize(template)
     result = :ticket_print
 
 	result = :ticket_print_black if template == "black_night"
