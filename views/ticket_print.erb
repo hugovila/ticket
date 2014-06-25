@@ -1,0 +1,22 @@
+<!doctype html> 
+<html>
+  <head>
+    <title>
+      You Choose Your Ticket and Template <%= params[:template] %>
+    </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h3>Your Ticket</h3>
+    <p>---------------------------------------------------------------</p>
+    <p>Your ticket: <%= params[:name] %> <%= params[:surname] %> <br>
+    In: <%= params[:where] %> at <%= params[:when] %> </p>
+    <p>---------------------------------------------------------------</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>=========================================================</p>
+    <p>
+      Your ticket URL: <a href="/ticket/print/<%= params[:name] %>/<%= params[:surname] %>/<%= params[:where] %>/<%=params[:when]%>">/ticket/print/<%=params[:name]%>/<%=params[:surname]%>/<%=params[:where]%>/<%=params[:when]%></a>
+    </p>
+  </body>
+</html>

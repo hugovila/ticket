@@ -1,0 +1,28 @@
+<!doctype html> 
+<html>
+  <head>
+    <title>
+      Choose Your Template
+    </title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h3>Choose Your Template</h3>
+    <p><%= ENV['HTTP_ACCEPT_LANGUAGE'] %></p>
+    <form action="/ticket/print" method="post">
+      <input type="hidden" name="name" value="<%= params[:name] %>">
+      <input type="hidden" name="surname" value="<%= params[:surname] %>">
+      <input type="hidden" name="where" value="<%= params[:where] %>">
+      <input type="hidden" name="when" value="<%= params[:when]%>">
+      <button type="submit" name="template" value="black_night">
+        Black Night
+      </button>
+      <button type="submit" name="template" value="moon_night">
+        Moon Night
+      </button>
+      <button type="submit" name="template" value="starry_night">
+        Starry Night
+      </button>
+    </form>
+  </body>
+</html>
