@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg4325" viewBox="0 0 242.3 302.47" version="1.1">
+  <defs id="defs3">
+    <filter id="filter3946" height="1.2127" width="1.0444" y="-.10636" x="-.022208" color-interpolation-filters="sRGB">
+      <feGaussianBlur id="feGaussianBlur3948" stdDeviation="1.6840971"/>
+    </filter>
+    <linearGradient id="linearGradient3938" x1="23.5" gradientUnits="userSpaceOnUse" y1="409.71" gradientTransform="translate(572 237.19)" x2="23.5" y2="351.31">
+      <stop id="stop3924" stop-color="#2e3436" offset="0"/>
+      <stop id="stop3926" stop-color="#d8571d" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient2855" y2="181.08" gradientUnits="userSpaceOnUse" y1="237.45" x2="296.51" x1="314.26">
+      <stop id="stop2851" stop-color="#eb7331" offset="0"/>
+      <stop id="stop2853" stop-color="#cf4913" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(-478.85 -441.13)">
+    <path id="path2824" fill="#eb7331" d="m700.29 554.36c0 7.2352-0.62538 114.57-1.8207 121.43-9.1363 52.42-51.57-8.1905-102.54-8.1905-50.183 0-92.093 61.821-102.09 10.6-1.4847-7.6059-2.2658-115.75-2.2658-123.83 0-62.538 46.722-113.23 104.36-113.23 57.635 0 104.36 50.697 104.36 113.23z"/>
+    <path id="path2837" transform="matrix(1.3547 0 0 1.3547 171.62 194.1)" fill="url(#linearGradient2855)" d="m358.57 237.01c0 23.078-18.708 41.786-41.786 41.786s-41.786-18.708-41.786-41.786 18.708-41.786 41.786-41.786 41.786 18.708 41.786 41.786z"/>
+    <path id="path2829" transform="matrix(.93162 0 0 .93162 303.52 290.83)" fill="#fff" d="m358.57 237.01c0 23.078-18.708 41.786-41.786 41.786s-41.786-18.708-41.786-41.786 18.708-41.786 41.786-41.786 41.786 18.708 41.786 41.786z"/>
+    <path id="path2833" transform="matrix(.44088 0 0 .44088 458.98 407.14)" fill="#2e3436" d="m358.57 237.01c0 23.078-18.708 41.786-41.786 41.786s-41.786-18.708-41.786-41.786 18.708-41.786 41.786-41.786 41.786 18.708 41.786 41.786z"/>
+    <path id="path2835" transform="matrix(.13628 0 0 .13628 563.25 473.67)" fill="#fff" d="m358.57 237.01c0 23.078-18.708 41.786-41.786 41.786s-41.786-18.708-41.786-41.786 18.708-41.786 41.786-41.786 41.786 18.708 41.786 41.786z"/>
+    <path id="rect3896" fill="url(#linearGradient3938)" d="m672 601.57v9.9792c0 3.3298-14.272 6.0104-32 6.0104h-89c-17.728 0-32-2.6806-32-6.0104v-9.9792c29.769-1.1063 128.38-28.819 153 0z"/>
+    <path id="rect3898" d="m556.47 596.32c-7.6359 1.2697-14.707 2.438-20.938 3.375-0.0172 0.22672-0.0312 0.45512-0.0312 0.6875v20.344c0 4.0554 2.6702 7.3438 6 7.3438h10c3.3298 0 6-3.2883 6-7.3438v-20.344c0-1.5103-0.39258-2.8993-1.0312-4.0625z" fill="#fff"/>
+    <path id="path3914" d="m592.25 604.88c-14.774 0-26.989 5.5123-28.969 12.688h57.937c-1.9799-7.1752-14.195-12.688-28.969-12.688z" fill="#2e3436"/>
+    <path id="rect3901" d="m626.19 588.51c-1.912 0.007-3.8525 0.0299-5.8125 0.0937-0.024 0.26709-0.0312 0.53736-0.0312 0.8125v20.375c0 4.0554 2.7015 7.3125 6.0312 7.3125h9.9688c3.3298 0 6-3.2571 6-7.3125v-20.375c0-0.0316 0.00032-0.0622 0-0.0937-5.0668-0.57465-10.497-0.834-16.156-0.8125z" fill="#fff"/>
+    <path id="path3940" filter="url(#filter3946)" transform="matrix(1.2747 0 0 1 853.67 -62.807)" fill="#d3d7cf" d="m-108 783.36c0 10.493-40.742 19-91 19s-91-8.5066-91-19 40.742-19 91-19 91 8.5066 91 19z"/>
+    <path id="path5276" transform="translate(480.97 446.43)" fill="#eb7331" d="m46.669 27.052a6.0104 6.0104 0 1 1 -12.021 0 6.0104 6.0104 0 1 1 12.021 0z"/>
+    <path id="path5278" transform="translate(471.78 462.34)" fill="#eb7331" d="m46.669 27.052a6.0104 6.0104 0 1 1 -12.021 0 6.0104 6.0104 0 1 1 12.021 0z"/>
+    <path id="path5280" d="m528.8 479.98c0.14757 0.5214 0.25 1.0564 0.25 1.625 0 3.3195-2.6805 6.0312-6 6.0312-1.5321 0-2.9385-0.58758-4-1.5312 0.72107 2.511 3.0072 4.3438 5.75 4.3438 3.3195 0 6.0312-2.6805 6.0312-6 0-1.7843-0.7965-3.368-2.0312-4.4688z" fill="#d9581e"/>
+    <path id="path5287" d="m518.46 495.89c0.10272 0.36292 0.17401 0.73527 0.17401 1.1311 0 2.3105-1.8658 4.198-4.1763 4.198-1.0664 0-2.0453-0.40898-2.7842-1.0658 0.5019 1.7478 2.0931 3.0235 4.0023 3.0235 2.3105 0 4.198-1.8658 4.198-4.1763 0-1.242-0.5544-2.3443-1.4138-3.1105z" fill="#d9581e"/>
+    <path id="path5289" transform="matrix(-1 0 0 1 706.55 439.71)" fill="#eb7331" d="m46.669 27.052a6.0104 6.0104 0 1 1 -12.021 0 6.0104 6.0104 0 1 1 12.021 0z"/>
+    <path id="path5291" transform="matrix(-1 0 0 1 715.74 455.62)" fill="#eb7331" d="m46.669 27.052a6.0104 6.0104 0 1 1 -12.021 0 6.0104 6.0104 0 1 1 12.021 0z"/>
+    <path id="path5293" d="m658.61 475.73c-0.16528 0.5214-0.28001 1.0564-0.28001 1.625 0 3.3195 3.0023 6.0312 6.7202 6.0312 1.716 0 3.2912-0.58758 4.4802-1.5312-0.80762 2.511-3.3682 4.3438-6.4402 4.3438-3.7179 0-6.7552-2.6805-6.7552-6 0-1.7843 0.89211-3.368 2.2751-4.4688z" fill="#d9581e"/>
+    <path id="path5295" d="m671.53 486.69c-0.10272 0.36292-0.17401 0.73527-0.17401 1.1311 0 2.3105 1.8658 4.198 4.1763 4.198 1.0664 0 2.0453-0.40898 2.7842-1.0658-0.5019 1.7478-2.0931 3.0235-4.0023 3.0235-2.3105 0-4.198-1.8658-4.198-4.1763 0-1.242 0.5544-2.3443 1.4138-3.1105z" fill="#d9581e"/>
+    <path id="path5297" transform="matrix(-1 0 0 1 724.93 469.76)" fill="#eb7331" d="m46.669 27.052a6.0104 6.0104 0 1 1 -12.021 0 6.0104 6.0104 0 1 1 12.021 0z"/>
+    <path id="path5299" d="m676.75 503.66c-0.14757 0.5214-0.25 1.0564-0.25 1.625 0 3.3195 2.6805 6.0312 6 6.0312 1.5321 0 2.9385-0.58758 4-1.5312-0.72107 2.511-3.0072 4.3438-5.75 4.3438-3.3195 0-6.0312-2.6805-6.0312-6 0-1.7843 0.7965-3.368 2.0312-4.4688z" fill="#d9581e"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>monster - pac</dc:title>
+        <dc:date>2010-05-02T20:52:17</dc:date>
+        <dc:description>Little comic monster in clean style.</dc:description>
+        <dc:source>http://openclipart.org/detail/58483/monster---pac-by-rg1024</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>rg1024</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>comic</rdf:li>
+            <rdf:li>monster</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

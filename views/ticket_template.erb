@@ -1,18 +1,21 @@
 
-    <h3>Choose Your Template</h3>
-    <p><%= ENV['HTTP_ACCEPT_LANGUAGE'] %></p>
     <form action="/ticket/print" method="post">
       <input type="hidden" name="name" value="<%= params[:name] %>">
       <input type="hidden" name="surname" value="<%= params[:surname] %>">
       <input type="hidden" name="where" value="<%= params[:where] %>">
       <input type="hidden" name="when" value="<%= params[:when]%>">
+      <fieldset>
+        <legend>
+          <%= I18n.t :"h2.choose", :scope => 'body.template', :locale => params[:locale] %>
+        </legend>
+      </fieldset>
       <button type="submit" name="template" value="black_night">
-        Black Night
+        <%= I18n.t :"form.black", :scope => 'body.template', :locale => params[:locale] %> 
       </button>
       <button type="submit" name="template" value="moon_night">
-        Moon Night
+        <%= I18n.t :"form.moon", :scope => 'body.template', :locale => params[:locale] %>
       </button>
       <button type="submit" name="template" value="starry_night">
-        Starry Night
+        <%= I18n.t :"form.starry", :scope => 'body.template', :locale => params[:locale] %>
       </button>
     </form>

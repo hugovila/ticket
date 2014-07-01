@@ -1,0 +1,104 @@
+---
+en:
+  greetings:
+    hello: 
+      world: Hello World!
+      friend: Hello Friend!
+      user: Hello %{user}
+  inbox:
+    messages:
+      one: You have one message in your inbox.
+      other: You have %{count} messages in your inbox.
+  header:
+    title: Ticket Dispenser
+    project_name: Ticket Dispenser
+  body:
+    jumbo:
+      greetings: Hello!
+      h2: Get your ticket for ours events
+      p: 
+        This is our Ticket Dispenser for our marketing or informational website. 
+        It includes a form for retrieving tickets for ours worldwide events. 
+        Use it as a starting point to asiste a something more unique.
+      button: Get Your ticket
+    form:
+      legend: Fill Your Ticket
+      label:
+        name: Name
+        surname: Surname
+        where: Where
+        when: When
+      submit: Submit
+      cancel: Cancel
+    template:
+      h2:
+        choose: Choose Your Template
+      form:
+        black: Black Night
+        moon: Moon Night
+        starry: Starry Night
+#  footer:
+#    copyright:
+
+  time:
+    am: a.m.
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: p.m.
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      birth: ! '%d.%m.'
+      default: ! '%Y-%m-%d'
+      long: ! '%B %d, %Y'
+      month_and_year: ! '%b %Y'
+      short: ! '%b %d'
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - year
+    - month
+    - day

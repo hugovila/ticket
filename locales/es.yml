@@ -1,0 +1,103 @@
+---
+es:
+  greetings:
+    hello: 
+      world: Hello World!
+      friend: Hello Friend!
+      user: Hello %{user}
+  inbox:
+    messages:
+      one: You have one message in your inbox.
+      other: You have %{count} messages in your inbox.
+  header:
+    title: Expendedor de Tickets
+    project_name: Expendedor de Ticket
+  body:
+    jumbo:
+      greetings: ¡Hola!
+      h2: Obtenga su entrada para nuestros eventos
+      p:
+        Este es nuestro Dispensador de Entradas para nuestro sitio web internacional.
+        Incluye un formulario para obtener entradas para nuestros eventos en todo el mundo.
+        Úselo como un punto de partida para obtener algo único. 
+      button: Obtenga su entrada
+    form:
+      legend: Rellene su Ticket
+      label:
+        name: Nombre
+        surname: Apellido
+        where: Dónde
+        when: Cuándo
+      submit: Enviar
+      cancel: Cancelar
+    template:
+      h2:
+        choose: Elija su plantilla para su Ticket
+      form:
+        black: Black Night
+        moon: Moon Night
+        starry: Starry Night
+#  footer:
+#    copyright: 
+  time:
+    am: a.m.
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: p.m.
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Domingo
+    - Lunes
+    - Martes
+    - Miércoles
+    - Jueves
+    - Viernes
+    - Sábado
+    formats:
+      birth: ! '%d.%m.'
+      default: ! '%Y-%m-%d'
+      long: ! '%B %d, %Y'
+      month_and_year: ! '%b %Y'
+      short: ! '%b %d'
+    month_names:
+    - 
+    - Enero
+    - Febrero
+    - Marzo
+    - Abril
+    - Mayo
+    - Junio
+    - Julio
+    - Agosto
+    - Septiembre
+    - Octubre
+    - Noviembre
+    - Diciembre
+    order:
+    - year
+    - month
+    - day

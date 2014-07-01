@@ -1,11 +1,4 @@
-
 *.zip
 *~
-
-
-
-
-
-
-
-
+initializr/
+*.*backup_original

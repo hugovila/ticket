@@ -5,7 +5,14 @@
    ========================================================================== */
 
 
+.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus{
+	color:#5e5e5e;
+}
 
+.available_locales {
+	 margin: 2% 0;
+	 color: #8E8E8E;
+}
 
 
 

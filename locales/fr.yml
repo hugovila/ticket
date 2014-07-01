@@ -1,0 +1,103 @@
+---
+fr:
+  greetings:
+    hello: 
+      world: Hello World!
+      friend: Hello Friend!
+      user: Hello %{user}
+  inbox:
+    messages:
+      one: You have one message in your inbox.
+      other: You have %{count} messages in your inbox.
+  header:
+    title: Ticket Dispenser
+    project_name: Ticket Dispenser
+  body:
+    jumbo:
+      greetings: Bonjour!
+      h2: Achetez vos billets pour nos événements
+      p:
+        Cela est notre page de distribution de billets pour notre site Web international.
+         Il Comprend un formulaire pour obtenir nos billets pour nos événements à travers le monde.
+         Utiliser-le comme point de départ de quelque chose d'unique.
+      button: Obtenez votre entrée
+    form:
+      legend: Remplissez votre Entrée
+      label:
+        name: Prénon
+        surname: Nom
+        where: Où
+        when: Quand
+      submit: Envoyer
+      cancel: Annuler
+    template:
+      h2:
+        choose: Choisissez votre modèle pour votre Entrée
+      form:
+        black: Black Night
+        moon: Moon Night
+        starry: Starry Night
+#  footer:
+#    copyright:
+  time:
+    am: a.m.
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: p.m.
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      birth: ! '%d.%m.'
+      default: ! '%Y-%m-%d'
+      long: ! '%B %d, %Y'
+      month_and_year: ! '%b %Y'
+      short: ! '%b %d'
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - year
+    - month
+    - day

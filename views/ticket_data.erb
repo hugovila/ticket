@@ -1,15 +1,44 @@
-<div>
-  <h3>Cumpliment Your Ticket</h3>
+
     <form action="/ticket/template" method="post">
-      <label>Name</label><br />
-      <input type="text" name="name"><br />
-      <label>Surname</label><br />
-      <input type="text" name="surname"><br />
-      <label>Where</label><br />
-      <input type="text" name="where"><br />
-      <label>When</label><br />
-      <input type="date" name="when"><br />
-      <input type="submit">
-      <input type="reset">
+      <fieldset>
+        <legend><%= I18n.t :legend, :scope => 'body.form', :locale => params[:locale] %></legend>
+        <div class="form-group">
+          <label class="col-lg-2 control-label" for="inputName"><%= I18n.t :"label.name", :scope => 'body.form', :locale => params[:locale] %></label>
+          <div class="col-lg-10">
+            <input type="text" name="name" class="form-control" id="inputName" placeholder="<%= I18n.t :"label.name", :scope => 'body.form', :locale => params[:locale] %>">
+          </div>
+          <label class="col-lg-2 control-label" for="inputSurname"><%= I18n.t :"label.surname", :scope => 'body.form', :locale => params[:locale] %></label>
+          <div class="col-lg-10">
+            <input type="text" name="surname" class="form-control" id="inputSurame" placeholder="<%= I18n.t :"label.surname", :scope => 'body.form', :locale => params[:locale] %>">
+          </div>
+          <label class="col-lg-2 control-label" for="selectWhere"><%= I18n.t :"label.where", :scope => 'body.form', :locale => params[:locale] %></label>
+          <div class="col-lg-10">
+            <!--<input type="text" name="where" class="form-control" id="inputWhere" placeholder="<%= I18n.t :"label.where", :scope => 'body.form', :locale => params[:locale] %>">-->
+            <select class="form-control" id="selectWhere" name="where">
+              <option>------------</option>
+              <option>Barcelona</option>
+              <option>Berlin</option>
+              <option>Valencia</option>
+              <option>London</option>
+              <option>Paris</option>
+              <option>Roma</option>
+            </select>
+          </div>
+          <label class="col-lg-2 control-label" for="inputWhen"><%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %></label>
+          <div class="col-lg-10">
+            <input type="date" name="when" class="form-control" id="inputWhen" placeholder="<%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %>">
+          </div>
+          <!--
+          <input type="reset" class="btn btn-default">
+          <input type="submit" class="btn btn-primary">
+          -->
+          <div class="col-lg-10">
+            <p>&nbsp;</p>
+            <button type="reset" class="btn btn-default"><%= I18n.t :cancel, :scope => 'body.form', :locale => params[:locale] %></button>
+            <button type="submit" class="btn btn-primary"><%= I18n.t :submit, :scope => 'body.form', :locale => params[:locale] %></button>
+          </div>
+          
+        </div>
+      </fieldset>
     </form>
-</div>
+    
