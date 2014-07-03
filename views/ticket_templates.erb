@@ -1,0 +1,57 @@
+
+    <form action="<%= data[:url_prefix_locale] %>/ticket/print" method="post">
+      <input type="hidden" name="name" value="<%= params[:name] %>">
+      <input type="hidden" name="surname" value="<%= params[:surname] %>">
+      <input type="hidden" name="where" value="<%= params[:where] %>">
+      <input type="hidden" name="when" value="<%= params[:when]%>">
+      <fieldset>
+        <legend>
+          <%= I18n.t :"h2.choose", :scope => 'body.template', :locale => params[:locale] %>
+        </legend>
+      </fieldset>
+      <div>
+      <button class="well" type="submit" name="template" value="black_night">
+        <%= I18n.t :"form.black", :scope => 'body.template', :locale => params[:locale] %> 
+        <div class="image" style="position: relative;">
+        <img src="img/ticket_black_p.png" style="width: 80%;" />
+        <p style="color: #bbb; position: absolute; left: 32%; top: 55%; text-align: left;">
+          <span style="font-weight: bolder;">
+          <%= params[:name] %> <%= params[:surname] %><br />
+          </span>
+          <%= params[:where] %><br />
+          <%= params[:when] %>
+        </p>
+        </div>
+      </button>
+      </div>
+      <div>
+      <button class="well" type="submit" name="template" value="moon_night">
+        <%= I18n.t :"form.moon", :scope => 'body.template', :locale => params[:locale] %>
+        <div class="image" style="position: relative;">
+        <img src="img/ticket_moon_p.png" style="width: 80%;" />
+        <p style="color: #bbb; position: absolute; left: 32%; top: 55%; text-align: left;">
+          <span style="font-weight: bolder;">
+          <%= params[:name] %> <%= params[:surname] %><br />
+          </span>
+          <%= params[:where] %><br />
+          <%= params[:when] %>
+        </p>
+        </div>
+      </button>
+      </div>
+      <div>
+      <button class="well" type="submit" name="template" value="starry_night">
+        <%= I18n.t :"form.starry", :scope => 'body.template', :locale => params[:locale] %>
+        <div class="image" style="position: relative;">
+        <img src="img/ticket_starry_p.png" style="width: 80%;" />
+        <p style="color: #bbb; position: absolute; left: 32%; top: 55%; text-align: left;">
+          <span style="font-weight: bolder;">
+          <%= params[:name] %> <%= params[:surname] %><br />
+          </span>
+          <%= params[:where] %><br />
+          <%= params[:when] %>
+        </p>
+        </div>
+      </button>
+      </div>
+    </form>

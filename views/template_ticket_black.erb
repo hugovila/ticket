@@ -1,22 +1,21 @@
-<!doctype html> 
-<html>
-  <head>
-    <title>
-      You Choose Your Ticket and Template <%= params[:template] %>
-    </title>
-    <meta charset="UTF-8">
-  </head>
-  <body style="background-color: #444;">
-    <h3>Your Ticket</h3>
-    <p>---------------------------------------------------------------</p>
-    <p>Your ticket: <%= params[:name] %> <%= params[:surname] %> <br>
-    In: <%= params[:where] %> at <%= params[:when] %> </p>
-    <p>---------------------------------------------------------------</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>====================================================</p>
+
+    <h3><%= I18n.t :"ticket.h3", :scope => 'body.template', :locale => params[:locale] %></h3>
+    <div>
+      <button class="well" type="submit" name="template" value="black_night">
+        <div class="image" style="position: relative;">
+        <img src="img/ticket_black_p.png" style="width: 80%;" />
+        <p style="color: #bbb; position: absolute; left: 32%; top: 55%; text-align: left;">
+          <span style="font-weight: bolder;">
+          <%= params[:name] %> <%= params[:surname] %><br />
+          </span>
+          <%= params[:where] %><br />
+          <%= params[:when] %>
+        </p>
+        </div>
+      </button>
+    </div>
+    <div>
     <p>
-      Your ticket URL: <a href="/ticket/print/<%= params[:name] %>/<%= params[:surname] %>/<%= params[:where] %>/<%=params[:when]%>/<%=params[:template]%>" style="color: red;">/ticket/print/<%=params[:name]%>/<%=params[:surname]%>/<%=params[:where]%>/<%=params[:when]%>/<%=params[:template]%></a>
+      <%= I18n.t :"ticket.url", :scope => 'body.template', :locale => params[:locale] %> : <a href="<%= data[:url_prefix_locale] %>/ticket/print/<%= params[:name] %>/<%= params[:surname] %>/<%= params[:where] %>/<%=params[:when]%>/<%=params[:template]%>"><%= data[:url_prefix_locale] %>/ticket/print/<%=params[:name]%>/<%=params[:surname]%>/<%=params[:where]%>/<%=params[:when]%>/<%=params[:template]%></a>
     </p>
-  </body>
-</html>
+    </div>

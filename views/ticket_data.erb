@@ -1,5 +1,5 @@
 
-    <form action="/ticket/template" method="post">
+    <form action="<%= data[:url_prefix_locale] %>/ticket/template" method="post">
       <fieldset>
         <legend><%= I18n.t :legend, :scope => 'body.form', :locale => params[:locale] %></legend>
         <div class="form-group">
@@ -15,7 +15,7 @@
           <div class="col-lg-10">
             <!--<input type="text" name="where" class="form-control" id="inputWhere" placeholder="<%= I18n.t :"label.where", :scope => 'body.form', :locale => params[:locale] %>">-->
             <select class="form-control" id="selectWhere" name="where">
-              <option>------------</option>
+              <option>--------------</option>
               <option>Barcelona</option>
               <option>Berlin</option>
               <option>Valencia</option>
