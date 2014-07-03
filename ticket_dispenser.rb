@@ -28,12 +28,14 @@ get '/' do
 
   data = {}
 
-  I18n.locale = obtain_browser_locale
+  # I18n.locale = obtain_browser_locale
+  # data[:browser_locale] = obtain_browser_locale
 
-  data[:I18n_available_locales] = I18n.available_locales
-  data[:browser_locale] = obtain_browser_locale
+  data[:url_prefix_locale] = "/#{I18n.locale}"
 
-  #data[:url_prefix_locale] = "/#{I18n.locale}"
+  data[:obtain_languages_locales_site_0] = obtain_languages_locales_site[0]
+  data[:obtain_languages_locales_site_1] = obtain_languages_locales_site[1]
+  data[:obtain_languages_locales_site_2] = obtain_languages_locales_site[2]
 
 	data[:company] = COMPANY
 	data[:author] = AUTHOR
@@ -47,12 +49,14 @@ get '/ticket/data' do
 
   data = {}
 
-  I18n.locale = obtain_browser_locale
+  # I18n.locale = obtain_browser_locale
+  # data[:browser_locale] = obtain_browser_locale
 
-  data[:I18n_available_locales] = I18n.available_locales
-  data[:browser_locale] = obtain_browser_locale
+  data[:url_prefix_locale] = "/#{I18n.locale}"
 
-  #data[:url_prefix_locale] = "/#{I18n.locale}"
+  data[:obtain_languages_locales_site_0] = obtain_languages_locales_site[0]
+  data[:obtain_languages_locales_site_1] = obtain_languages_locales_site[1]
+  data[:obtain_languages_locales_site_2] = obtain_languages_locales_site[2]
 	
 	data[:company] = COMPANY
 	data[:author] = AUTHOR
@@ -67,9 +71,11 @@ post '/ticket/template' do
   data = {}
 
   I18n.locale = obtain_browser_locale
-
-  data[:I18n_available_locales] = I18n.available_locales
   data[:browser_locale] = obtain_browser_locale
+
+
+  data[:I18n_available_locales] = I18n.available_locales # Borrar
+  
 
   #data[:url_prefix_locale] = "/#{I18n.locale}"
 	
@@ -87,7 +93,7 @@ post '/ticket/print' do
 
   I18n.locale = obtain_browser_locale
 
-  data[:I18n_available_locales] = I18n.available_locales
+  data[:I18n_available_locales] = I18n.available_locales  # Borrar
   data[:browser_locale] = obtain_browser_locale
 
   #data[:url_prefix_locale] = "/#{I18n.locale}"
@@ -107,7 +113,7 @@ get '/ticket/print/:name/:surname/:where/:when/:template' do
 
   I18n.locale = obtain_browser_locale
 
-  data[:I18n_available_locales] = I18n.available_locales
+  data[:I18n_available_locales] = I18n.available_locales  # Borrar
   data[:browser_locale] = obtain_browser_locale
 
   #data[:url_prefix_locale] = "/#{I18n.locale}"
@@ -134,16 +140,16 @@ end
 
 
 
-# before '/' do
-# redirect to("/#{obtain_browser_locale}/")
+before '/' do
+redirect to("/#{obtain_browser_locale}/")
   
-# end
+end
 
-# before '/:locale/*' do
-#   I18n.locale       =       params[:locale]
-#   request.path_info = '/' + params[:splat ][0]
+before '/:locale/*' do
+  I18n.locale       =       params[:locale]
+  request.path_info = '/' + params[:splat ][0]
 
-# end
+end
 
 
 
@@ -166,8 +172,6 @@ end
 def renderize(template, locals)
 
   templates = { :black_night => :template_ticket_black, :moon_night => :template_ticket_moon, :starry_night => :template_ticket_starry }
-
-	#params[:title] = "Ticket Dispenser"
 
 	template = template.to_sym
 
@@ -193,10 +197,16 @@ def obtain_browser_locale
 end
 
 
-def obtain_available_locales
+def obtain_languages_locales_site
   site_available_locales = I18n.available_locales
   result = []
-  site_available_locales = site_available_locales.each { |item| result << item[1..2] }
-  p result
+  site_available_locales = site_available_locales.each { |item| result << item[0..2] }
+  result
 end
 
+# def obtain_languages_locales_site(position)
+#   site_available_locales = I18n.available_locales
+#   result = []
+#   site_available_locales = site_available_locales.each { |item| result << item[0..2] }
+#   result[position]
+# end

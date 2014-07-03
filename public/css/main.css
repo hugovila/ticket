@@ -18,7 +18,11 @@ footer p span.copy {
   font-weight: lighter;
 }
 
-
+form.templates-tickets button {
+  font-size: 2 rem;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #888;
+}
 
 
 
