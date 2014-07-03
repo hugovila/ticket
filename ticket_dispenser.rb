@@ -57,7 +57,7 @@ get '/ticket/data' do
 	data[:company] = COMPANY
 	data[:author] = AUTHOR
 
-	erb :ticket_data, :layout => :layout, locals: { data: data }
+	erb :ticket_data, :layout => :layout_data, locals: { data: data }
 end
 
 
@@ -167,7 +167,7 @@ def renderize(template, locals)
 
   templates = { :black_night => :template_ticket_black, :moon_night => :template_ticket_moon, :starry_night => :template_ticket_starry }
 
-	params[:title] = "Ticket Dispenser"
+	#params[:title] = "Ticket Dispenser"
 
 	template = template.to_sym
 

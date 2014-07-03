@@ -1,21 +1,21 @@
 
-    <form action="<%= data[:url_prefix_locale] %>/ticket/template" method="post">
+    <form action="<%= data[:url_prefix_locale] %>/ticket/template" method="post" id="dataForm">
       <fieldset>
         <legend><%= I18n.t :legend, :scope => 'body.form', :locale => params[:locale] %></legend>
         <div class="form-group">
           <label class="col-lg-2 control-label" for="inputName"><%= I18n.t :"label.name", :scope => 'body.form', :locale => params[:locale] %></label>
           <div class="col-lg-10">
-            <input type="text" name="name" class="form-control" id="inputName" placeholder="<%= I18n.t :"label.name", :scope => 'body.form', :locale => params[:locale] %>">
+            <input type="text" name="name" class="form-control" id="inputName" placeholder="<%= I18n.t :"label.name", :scope => 'body.form', :locale => params[:locale] %>" required>
           </div>
           <label class="col-lg-2 control-label" for="inputSurname"><%= I18n.t :"label.surname", :scope => 'body.form', :locale => params[:locale] %></label>
           <div class="col-lg-10">
-            <input type="text" name="surname" class="form-control" id="inputSurame" placeholder="<%= I18n.t :"label.surname", :scope => 'body.form', :locale => params[:locale] %>">
+            <input type="text" name="surname" class="form-control" id="inputSurame" placeholder="<%= I18n.t :"label.surname", :scope => 'body.form', :locale => params[:locale] %>" required>
           </div>
           <label class="col-lg-2 control-label" for="selectWhere"><%= I18n.t :"label.where", :scope => 'body.form', :locale => params[:locale] %></label>
           <div class="col-lg-10">
             <!--<input type="text" name="where" class="form-control" id="inputWhere" placeholder="<%= I18n.t :"label.where", :scope => 'body.form', :locale => params[:locale] %>">-->
-            <select class="form-control" id="selectWhere" name="where">
-              <option>--------------</option>
+            <select class="form-control" id="selectWhere" name="where" required>
+              <option></option>
               <option>Barcelona</option>
               <option>Berlin</option>
               <option>Valencia</option>
@@ -26,7 +26,7 @@
           </div>
           <label class="col-lg-2 control-label" for="inputWhen"><%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %></label>
           <div class="col-lg-10">
-            <input type="date" name="when" class="form-control" id="inputWhen" placeholder="<%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %>">
+            <input type="date" name="when" class="form-control" id="inputWhen" placeholder="<%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %>" required date>
           </div>
           <!--
           <input type="reset" class="btn btn-default">
@@ -41,4 +41,14 @@
         </div>
       </fieldset>
     </form>
+    <script>
+      $("dataForm").validate({
+        rules: {
+          inputWhen: {
+            required: true,
+            date: true
+                  }
+                }
+        });
+    </script>
     
