@@ -37,6 +37,9 @@ es:
         black: Black Night
         moon: Moon Night
         starry: Starry Night
+      ticket:
+        h3: Su entrada
+        url: La URL de su entrada
 #  footer:
 #    copyright: 
   time:
@@ -101,3 +104,6 @@ es:
     - year
     - month
     - day
+  not:
+    found:
+      not_found_404: No encontrado

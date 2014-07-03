@@ -37,6 +37,9 @@ en:
         black: Black Night
         moon: Moon Night
         starry: Starry Night
+      ticket:
+        h3: Your ticket
+        url: Your ticket URL
 #  footer:
 #    copyright:
 
@@ -102,3 +105,6 @@ en:
     - year
     - month
     - day
+  not:
+    found:
+      not_found_404: Not found

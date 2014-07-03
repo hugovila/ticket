@@ -10,7 +10,7 @@ fr:
       one: You have one message in your inbox.
       other: You have %{count} messages in your inbox.
   header:
-    title: Ticket Dispenser
+    title: Ticket Dispenser 
     project_name: Ticket Dispenser
   body:
     jumbo:
@@ -37,6 +37,9 @@ fr:
         black: Black Night
         moon: Moon Night
         starry: Starry Night
+      ticket:
+        h3: Votre entrée
+        url: La URL de votre entrée
 #  footer:
 #    copyright:
   time:
@@ -101,3 +104,6 @@ fr:
     - year
     - month
     - day
+  not:
+    found:
+      not_found_404: Non trouvée

@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <base href="/">
-        <title><%= I18n.t :title, :scope => :header, :locale => params[:locale] %></title>
+        <title><%= t :title, :scope => :header, :locale => params[:locale] %></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -36,10 +36,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><strong><%= I18n.t :project_name, :scope => :header, :locale => params[:locale] %></strong></a>
+          <a class="navbar-brand" href="#"><strong><%= t('header.project_name') %></strong></a>
         </div>
         <div class="navbar-collapse collapse">
-        <!--
+          <!--
           <form class="navbar-form navbar-right" role="form">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
@@ -55,18 +55,21 @@
       </div>
     </div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1><%= I18n.t :greetings, :scope => 'body.jumbo', :locale => params[:locale] %></h1>
-        <h2><%= I18n.t :h2, :scope => 'body.jumbo', :locale => params[:locale] %></h2>
-        <p><%= I18n.t :p, :scope => 'body.jumbo', :locale => params[:locale] %></p>
-        <%= yield %>
-      </div>
-    </div>
-
     <div class="container">
-      
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+          <h2><%= params[:heading] %></h2>
+          <div>
+            <%= yield %>
+          </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+
       <hr>
 
       <footer>
