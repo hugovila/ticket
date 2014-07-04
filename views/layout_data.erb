@@ -52,7 +52,7 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
           -->
-          <div class="navbar-right available_locales"><a href="/fr/"><%= data[:obtain_languages_locales_site_0] %></a> | <a href="/en/"><%= data[:obtain_languages_locales_site_1] %></a> | <a href="/es/"><%= data[:obtain_languages_locales_site_2] %></a></div>
+          <div class="navbar-right available_locales"><a href="/fr<%= data[:path_info] %>"><%= data[:obtain_language_locale_site_fr] %></a> | <a href="/en<%= data[:path_info] %>"><%= data[:obtain_language_locale_site_en] %></a> | <a href="/es<%= data[:path_info] %>"><%= data[:obtain_language_locale_site_es] %></a> <%= data[:path_info] %> " <%= data[:obtain_languages_locales_site_chain] %> "</div>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
