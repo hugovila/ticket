@@ -40,8 +40,10 @@ en:
       ticket:
         h3: Your ticket
         url: Your ticket URL
-#  footer:
-#    copyright:
+  footer:
+    company: Devscola
+    author: Hugo Vila
+
 
   time:
     am: a.m.
@@ -108,3 +110,7 @@ en:
   not:
     found:
       not_found_404: Not found
+      p1: Sorry, but the page you were trying to view does not exist.
+      p2: It looks like this was the result of either
+      li1: a mistyped address
+      li2: an out-of-date link

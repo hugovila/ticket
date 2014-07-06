@@ -22,6 +22,14 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+        <script language="javascript"> 
+
+          function DoPost(){
+            $.post("/es/ticket/template", { name: "John", surname: "Vila", where: "Marakesh", when: "2014-07-27" } ); 
+          }
+
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -50,7 +58,7 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
           -->
-          <div class="navbar-right available_locales"><a href="/fr<%= data[:path_info] %>"><%= data[:obtain_languages_locales_site_0] %></a> | <a href="/en<%= data[:path_info] %>"><%= data[:obtain_languages_locales_site_1] %></a> | <a href="/es<%= data[:path_info] %>"><%= data[:obtain_languages_locales_site_2] %></a> " <%= data[:obtain_languages_locales_site_chain] %> "</div>
+          <div class="navbar-right available_locales"><!-- <%= data[:obtain_languages_locales_site_chain] %> --></div>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -73,7 +81,7 @@
       <hr>
 
       <footer>
-        <p><span class="copy"><%= data[:author] %> &copy; <%= data[:company] %> 2014</span></p>
+        <p><span class="copy"><%= I18n.t :author, :scope => :footer, :locale => params[:locale] %> &copy; <%= I18n.t :company, :scope => :footer, :locale => params[:locale] %> <%= data[:year] %></span></p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>

@@ -107,3 +107,7 @@ fr:
   not:
     found:
       not_found_404: Non trouvée
+      p1: Désolé, mais la page que vous essayez d'afficher n'existe pas.
+      p2: La raison est l'un des deux motifs suivants
+      li1: une adresse erronée
+      li2: un lien périmé

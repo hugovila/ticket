@@ -50,7 +50,7 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
           -->
-          <div class="navbar-right available_locales"><%= data[:I18n_available_locales] %></div>
+          <div class="navbar-right available_locales"><%= data[:obtain_languages_locales_site_chain] %></div>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -69,30 +69,21 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-12">
           <h5>|<%= data[:your_are_in] %>|</h5>
-          <div>
-            <%= yield %>
-          </div>
         </div>
-        <!--
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        -->
       </div>
+      <div class="row">
+        
+        <%= yield %>
+        
+      </div>
+
 
       <hr>
 
       <footer>
-        <p><span class="copy"><%= data[:author] %> &copy; <%= data[:company] %> 2014</span></p>
+        <p><span class="copy"><%= I18n.t :author, :scope => :footer, :locale => params[:locale] %> &copy; <%= I18n.t :company, :scope => :footer, :locale => params[:locale] %> <%= data[:year] %></span></p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>

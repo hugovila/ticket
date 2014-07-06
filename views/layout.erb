@@ -50,7 +50,7 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
           -->
-          <div class="navbar-right available_locales"><%= data[:I18n_available_locales] %></div>
+          <div class="navbar-right available_locales"><%= data[:obtain_languages_locales_site_chain] %></div>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -92,7 +92,7 @@
       <hr>
 
       <footer>
-        <p><span class="copy"><%= data[:author] %> &copy; <%= data[:company] %> 2014</span></p>
+        <p><span class="copy"><%= I18n.t :author, :scope => :footer, :locale => params[:locale] %> &copy; <%= I18n.t :company, :scope => :footer, :locale => params[:locale] %> <%= data[:year] %></span></p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>

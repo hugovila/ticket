@@ -107,3 +107,7 @@ es:
   not:
     found:
       not_found_404: No encontrado
+      p1: Lo sentimos, pero la página que estabas tratando de ver no existe.
+      p2: Parece que la razón pudiera ser cualquiera de estos dos motivos
+      li1: una dirección mal escrita
+      li2: un enlace desactualizado

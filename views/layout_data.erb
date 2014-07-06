@@ -52,7 +52,7 @@
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
           -->
-          <div class="navbar-right available_locales"><a href="/fr<%= data[:path_info] %>"><%= data[:obtain_language_locale_site_fr] %></a> | <a href="/en<%= data[:path_info] %>"><%= data[:obtain_language_locale_site_en] %></a> | <a href="/es<%= data[:path_info] %>"><%= data[:obtain_language_locale_site_es] %></a> <%= data[:path_info] %> " <%= data[:obtain_languages_locales_site_chain] %> "</div>
+          <div class="navbar-right available_locales"><%= data[:obtain_languages_locales_site_chain] %></div>
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -82,7 +82,7 @@
       <hr>
 
       <footer>
-        <p><span class="copy"><%= data[:author] %> &copy; <%= data[:company] %> 2014</span></p>
+        <p><span class="copy"><%= t :author, :scope => :footer, :locale => params[:locale] %> &copy; <%= t :company, :scope => :footer, :locale => params[:locale] %> <%= data[:year] %></span></p>
       </footer>
     </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>

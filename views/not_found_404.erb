@@ -1,16 +1,16 @@
-        <div class="col-md-4">
+        <div class="col-sm-6">
           <h1><%= I18n.t :not_found_404, :scope => 'not.found', :locale => params[:locale] %><span>:(</span></h1>
-          <p>Sorry, but the page you were trying to view does not exist.</p>
-          <p>It looks like this was the result of either:</p>
+          <p><%= I18n.t :p1, :scope => 'not.found', :locale => params[:locale] %></p>
+          <p><%= I18n.t :p2, :scope => 'not.found', :locale => params[:locale] %>:</p>
             <ul>
-              <li>a mistyped address</li>
-              <li>an out-of-date link</li>
+              <li><%= I18n.t :li1, :scope => 'not.found', :locale => params[:locale] %></li>
+              <li><%= I18n.t :li2, :scope => 'not.found', :locale => params[:locale] %></li>
             </ul>
           <script>
             var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
           </script>
           <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
         </div>
-        <div class="col-md-4">
-          <img class="img-error" style="width: 50%; display: none;" src="img/not_found_monster.svg">
+        <div class="col-sm-6">
+          <img class="img-error" style="max-width: 50%; display: block; margin: 15% auto;" src="img/not_found_monster.svg">
         </div>
