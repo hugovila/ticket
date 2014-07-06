@@ -28,6 +28,8 @@ en:
         surname: Surname
         where: Where
         when: When
+      option:
+        choose: Choose a city
       submit: Submit
       cancel: Cancel
     template:

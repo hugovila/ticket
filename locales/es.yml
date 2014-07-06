@@ -27,7 +27,9 @@ es:
         name: Nombre
         surname: Apellido
         where: Dónde
-        when: Cuándo
+        when: Cuando
+      option:
+        choose: Elija una ciudad
       submit: Enviar
       cancel: Cancelar
     template:

@@ -28,6 +28,8 @@ fr:
         surname: Nom
         where: Où
         when: Quand
+      option:
+        choose: Choisissez une ville
       submit: Envoyer
       cancel: Annuler
     template:

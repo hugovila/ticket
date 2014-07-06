@@ -15,7 +15,7 @@
           <div class="col-lg-10">
             <!--<input type="text" name="where" class="form-control" id="inputWhere" placeholder="<%= I18n.t :"label.where", :scope => 'body.form', :locale => params[:locale] %>">-->
             <select class="form-control" id="selectWhere" name="where" required>
-              <option></option>
+              <option value=""><%= I18n.t :"option.choose", :scope => 'body.form', :locale => params[:locale] %></option>
               <option>Barcelona</option>
               <option>Berlin</option>
               <option>Valencia</option>
@@ -26,7 +26,7 @@
           </div>
           <label class="col-lg-2 control-label" for="inputWhen"><%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %></label>
           <div class="col-lg-10">
-            <input type="date" name="when" class="form-control" id="inputWhen" placeholder="<%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %>" required date>
+            <input type="date" name="when" class="form-control" id="inputWhen" placeholder="<%= I18n.t :"label.when", :scope => 'body.form', :locale => params[:locale] %>" required>
           </div>
           <!--
           <input type="reset" class="btn btn-default">

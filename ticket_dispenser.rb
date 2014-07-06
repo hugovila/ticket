@@ -27,7 +27,7 @@ end
 
 
 before '/' do
-  redirect to("/#{obtain_browser_locale}/")
+  redirect to("/#{obtain_browser_locale}/"), 307
 end
 
 before '/:locale/*' do
