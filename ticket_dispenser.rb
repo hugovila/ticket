@@ -111,6 +111,7 @@ post '/ticket/print' do
 
   data[:url_prefix_locale] = "/#{I18n.locale}"
 
+data[:when] = convert_data_form(params[:when])
 
   data[:obtain_languages_locales_site_chain] = obtain_languages_locales_site_chain
   data[:path_info] = request.path_info
@@ -232,5 +233,6 @@ def obtain_languages_locales_site_chain
 end
 
 def convert_data_form(data_to_convert)
-  data_converted = data_to_convert.gsub("\/", "&sol;")
+  # data_converted = data_to_convert.gsub("\/", "&sol;")
+  data_converted = data_to_convert.gsub("\/", "-")
 end

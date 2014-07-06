@@ -18,7 +18,7 @@
     <p>
       <%= I18n.t :"ticket.url", :scope => 'body.template', :locale => params[:locale] %> : <a href="<%= data[:url_prefix_locale] %>/ticket/print/<%= params[:name] %>/<%= params[:surname] %>/<%= params[:where] %>/<%=params[:when]%>/<%=params[:template]%>"><%= data[:url_prefix_locale] %>/ticket/print/<%=params[:name]%>/<%=params[:surname]%>/<%=params[:where]%>/<%=params[:when]%>/<%=params[:template]%></a>
     </p>
-    <p>
+    <p style="display: none;">
       <%= I18n.t :"ticket.url", :scope => 'body.template', :locale => params[:locale] %> : 
       <a href="
       <%= data[:url_prefix_locale] %><%= data[:path_info] %>
