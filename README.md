@@ -1,0 +1,1 @@
+A ticket dispenser with a form for entering data, basic customization of format or appearance of ticket and a final page ticket presentation and ticket url recovery.
