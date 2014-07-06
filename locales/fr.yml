@@ -10,8 +10,8 @@ fr:
       one: You have one message in your inbox.
       other: You have %{count} messages in your inbox.
   header:
-    title: Ticket Dispenser 
-    project_name: Ticket Dispenser
+    title: Distributeur de Billets 
+    project_name: Distributeur de Billets
   body:
     jumbo:
       greetings: Bonjour!
@@ -73,13 +73,13 @@ fr:
     - Nov
     - Dec
     day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
+    - Dimanche
+    - Lundi
+    - Mardi
+    - Mercredi
+    - Jeudi
+    - Vendredi
+    - Samedi
     formats:
       birth: ! '%d.%m.'
       default: ! '%Y-%m-%d'
@@ -88,18 +88,18 @@ fr:
       short: ! '%b %d'
     month_names:
     - 
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
+    - Janvier
+    - Février
+    - Mars
+    - Avril
+    - Mai
+    - Juin
+    - Juillet
+    - Août
+    - Septembre
+    - Octobre
+    - Novembre
+    - Décembre
     order:
     - year
     - month
