@@ -134,8 +134,6 @@ get '/ticket/print/:name/:surname/:where/:when/:template' do
   
   data[:obtain_languages_locales_site_chain] = obtain_languages_locales_site_chain
   data[:path_info] = request.path_info
-  #data[:company] = COMPANY
-  #data[:author] = AUTHOR
   data[:year] = time.year
 	
 	renderize(params[:template], locals: { data: data })
