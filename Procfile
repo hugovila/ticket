@@ -1,0 +1,1 @@
+web: bundle exec ruby ticket_dispenser.rb -p $PORT
