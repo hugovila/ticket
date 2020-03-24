@@ -1,7 +1,7 @@
 ---
 es:
   greetings:
-    hello: 
+    hello:
       world: Hello World!
       friend: Hello Friend!
       user: Hello %{user}
@@ -19,9 +19,10 @@ es:
       p:
         Este es nuestro Dispensador de Entradas para nuestro sitio web internacional.
         Incluye un formulario para obtener entradas para nuestros eventos en todo el mundo.
-        Úselo como un punto de partida para obtener algo único. 
+        Úselo como un punto de partida para obtener algo único.
       button: Obtenga su entrada
     form:
+      h2: Datos a rellenar para su Ticket
       legend: Rellene su Ticket
       label:
         name: Nombre
@@ -42,70 +43,70 @@ es:
       ticket:
         h3: Su entrada
         url: La URL de su entrada
-#  footer:
-#    copyright: 
+  #  footer:
+  #    copyright:
   time:
     am: a.m.
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: ! "%a, %d %b %Y %H:%M:%S %z"
+      long: ! "%B %d, %Y %H:%M"
+      short: ! "%d %b %H:%M"
     pm: p.m.
   date:
     abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
     abbr_month_names:
-    - 
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
+      -
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
     day_names:
-    - Domingo
-    - Lunes
-    - Martes
-    - Miércoles
-    - Jueves
-    - Viernes
-    - Sábado
+      - Domingo
+      - Lunes
+      - Martes
+      - Miércoles
+      - Jueves
+      - Viernes
+      - Sábado
     formats:
-      birth: ! '%d.%m.'
-      default: ! '%Y-%m-%d'
-      long: ! '%B %d, %Y'
-      month_and_year: ! '%b %Y'
-      short: ! '%b %d'
+      birth: ! "%d.%m."
+      default: ! "%Y-%m-%d"
+      long: ! "%B %d, %Y"
+      month_and_year: ! "%b %Y"
+      short: ! "%b %d"
     month_names:
-    - 
-    - Enero
-    - Febrero
-    - Marzo
-    - Abril
-    - Mayo
-    - Junio
-    - Julio
-    - Agosto
-    - Septiembre
-    - Octubre
-    - Noviembre
-    - Diciembre
+      -
+      - Enero
+      - Febrero
+      - Marzo
+      - Abril
+      - Mayo
+      - Junio
+      - Julio
+      - Agosto
+      - Septiembre
+      - Octubre
+      - Noviembre
+      - Diciembre
     order:
-    - year
-    - month
-    - day
+      - year
+      - month
+      - day
   not:
     found:
       not_found_404: No encontrado

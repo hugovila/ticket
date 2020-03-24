@@ -1,7 +1,7 @@
 ---
 fr:
   greetings:
-    hello: 
+    hello:
       world: Hello World!
       friend: Hello Friend!
       user: Hello %{user}
@@ -10,7 +10,7 @@ fr:
       one: You have one message in your inbox.
       other: You have %{count} messages in your inbox.
   header:
-    title: Distributeur de Billets 
+    title: Distributeur de Billets
     project_name: Distributeur de Billets
   body:
     jumbo:
@@ -18,10 +18,11 @@ fr:
       h2: Achetez vos billets pour nos événements
       p:
         Cela est notre page de distribution de billets pour notre site Web international.
-         Il Comprend un formulaire pour obtenir nos billets pour nos événements à travers le monde.
-         Utiliser-le comme point de départ de quelque chose d'unique.
+        Il Comprend un formulaire pour obtenir nos billets pour nos événements à travers le monde.
+        Utiliser-le comme point de départ de quelque chose d'unique.
       button: Obtenez votre entrée
     form:
+      h2: Informations à remplir pour votre Entrée
       legend: Remplissez votre Entrée
       label:
         name: Prénon
@@ -42,70 +43,70 @@ fr:
       ticket:
         h3: Votre entrée
         url: La URL de votre entrée
-#  footer:
-#    copyright:
+  #  footer:
+  #    copyright:
   time:
     am: a.m.
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: ! "%a, %d %b %Y %H:%M:%S %z"
+      long: ! "%B %d, %Y %H:%M"
+      short: ! "%d %b %H:%M"
     pm: p.m.
   date:
     abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
     abbr_month_names:
-    - 
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
+      -
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
     day_names:
-    - Dimanche
-    - Lundi
-    - Mardi
-    - Mercredi
-    - Jeudi
-    - Vendredi
-    - Samedi
+      - Dimanche
+      - Lundi
+      - Mardi
+      - Mercredi
+      - Jeudi
+      - Vendredi
+      - Samedi
     formats:
-      birth: ! '%d.%m.'
-      default: ! '%Y-%m-%d'
-      long: ! '%B %d, %Y'
-      month_and_year: ! '%b %Y'
-      short: ! '%b %d'
+      birth: ! "%d.%m."
+      default: ! "%Y-%m-%d"
+      long: ! "%B %d, %Y"
+      month_and_year: ! "%b %Y"
+      short: ! "%b %d"
     month_names:
-    - 
-    - Janvier
-    - Février
-    - Mars
-    - Avril
-    - Mai
-    - Juin
-    - Juillet
-    - Août
-    - Septembre
-    - Octobre
-    - Novembre
-    - Décembre
+      -
+      - Janvier
+      - Février
+      - Mars
+      - Avril
+      - Mai
+      - Juin
+      - Juillet
+      - Août
+      - Septembre
+      - Octobre
+      - Novembre
+      - Décembre
     order:
-    - year
-    - month
-    - day
+      - year
+      - month
+      - day
   not:
     found:
       not_found_404: Non trouvée

@@ -1,7 +1,7 @@
 ---
 en:
   greetings:
-    hello: 
+    hello:
       world: Hello World!
       friend: Hello Friend!
       user: Hello %{user}
@@ -16,12 +16,13 @@ en:
     jumbo:
       greetings: Hello!
       h2: Get your ticket for ours events
-      p: 
-        This is our Ticket Dispenser for our marketing or informational website. 
-        It includes a form for retrieving tickets for ours worldwide events. 
+      p:
+        This is our Ticket Dispenser for our marketing or informational website.
+        It includes a form for retrieving tickets for ours worldwide events.
         Use it as a starting point to asiste a something more unique.
       button: Get Your ticket
     form:
+      h2: Information to fill in for your ticket
       legend: Fill Your Ticket
       label:
         name: Name
@@ -46,69 +47,68 @@ en:
     company: Devscola
     author: Hugo Vila
 
-
   time:
     am: a.m.
     formats:
-      default: ! '%a, %d %b %Y %H:%M:%S %z'
-      long: ! '%B %d, %Y %H:%M'
-      short: ! '%d %b %H:%M'
+      default: ! "%a, %d %b %Y %H:%M:%S %z"
+      long: ! "%B %d, %Y %H:%M"
+      short: ! "%d %b %H:%M"
     pm: p.m.
   date:
     abbr_day_names:
-    - Sun
-    - Mon
-    - Tue
-    - Wed
-    - Thu
-    - Fri
-    - Sat
+      - Sun
+      - Mon
+      - Tue
+      - Wed
+      - Thu
+      - Fri
+      - Sat
     abbr_month_names:
-    - 
-    - Jan
-    - Feb
-    - Mar
-    - Apr
-    - May
-    - Jun
-    - Jul
-    - Aug
-    - Sep
-    - Oct
-    - Nov
-    - Dec
+      -
+      - Jan
+      - Feb
+      - Mar
+      - Apr
+      - May
+      - Jun
+      - Jul
+      - Aug
+      - Sep
+      - Oct
+      - Nov
+      - Dec
     day_names:
-    - Sunday
-    - Monday
-    - Tuesday
-    - Wednesday
-    - Thursday
-    - Friday
-    - Saturday
+      - Sunday
+      - Monday
+      - Tuesday
+      - Wednesday
+      - Thursday
+      - Friday
+      - Saturday
     formats:
-      birth: ! '%d.%m.'
-      default: ! '%Y-%m-%d'
-      long: ! '%B %d, %Y'
-      month_and_year: ! '%b %Y'
-      short: ! '%b %d'
+      birth: ! "%d.%m."
+      default: ! "%Y-%m-%d"
+      long: ! "%B %d, %Y"
+      month_and_year: ! "%b %Y"
+      short: ! "%b %d"
     month_names:
-    - 
-    - January
-    - February
-    - March
-    - April
-    - May
-    - June
-    - July
-    - August
-    - September
-    - October
-    - November
-    - December
+      -
+      - January
+      - February
+      - March
+      - April
+      - May
+      - June
+      - July
+      - August
+      - September
+      - October
+      - November
+      - December
     order:
-    - year
-    - month
-    - day
+      - year
+      - month
+      - day
   not:
     found:
       not_found_404: Not found
