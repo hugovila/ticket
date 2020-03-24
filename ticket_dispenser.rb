@@ -18,6 +18,8 @@ time = Time.new
 I18n.load_path = Dir['./locales/*.yml', './locales/*.rb']
 I18n.locale = :en
 I18n.default_locale = :en
+I18n.fallbacks.map(:es => :en)
+I18n.fallbacks.map(:fr => :en)
 
 helpers do
   def t(*key)
